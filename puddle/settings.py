@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -125,3 +128,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Stripe API keys
+STRIPE_PUBLIC_KEY = 'pk_test_uTZhooos5TJ98JaORK9DfN9N00lHpRa3mz'
+STRIPE_SECRET_KEY = 'sk_test_xeuLnVbvSSKzxmRJOOjjLzEB00lQgGcHNE'
